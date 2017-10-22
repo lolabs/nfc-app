@@ -1,6 +1,11 @@
 This is a starter template for an App with NFC functionality
 
 ## How to use this starter
+=======
+
+
+### With the Ionic CLI:
+
 
 ```bash
 $ sudo npm install -g ionic cordova
