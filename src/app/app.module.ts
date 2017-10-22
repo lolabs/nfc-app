@@ -8,12 +8,18 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { NFC, Ndef } from '@ionic-native/nfc';
+
+import { NfcReaderComponent } from '../components/nfc-reader/nfc-reader';
+import {NfcPage} from "../pages/nfc/nfc";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    NfcPage,
+    NfcReaderComponent
   ],
   imports: [
     BrowserModule,
@@ -23,11 +29,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    NfcPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    NFC,
+    Ndef,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
