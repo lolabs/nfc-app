@@ -1,26 +1,20 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a starter template for an App with NFC functionality
 
-## How to use this template
-
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/driftyco/ionic2-app-base).
-
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/driftyco/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+## How to use this starter
 
 ```bash
 $ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
 ```
 
-Then, to run it, cd into `mySideMenu` and run:
+Then install Plugin and Platform, to run it, cd into `nfc-playground` and run:
 
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ ionic plugin add phonegap-nfc
+$ ionic platform add android
 ```
 
-Substitute ios for android if not on a Mac.
+Plug in your NFC enabled Android phone and run the app
+
+    $ ionic run --device
+Substitute ios for android if you are developing an iOS App on a Mac.
 
